@@ -1,4 +1,4 @@
-# \SegmentEffortsApi
+# {{classname}}
 
 All URIs are relative to *https://www.strava.com/api/v3*
 
@@ -6,7 +6,6 @@ Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**GetEffortsBySegmentId**](SegmentEffortsApi.md#GetEffortsBySegmentId) | **Get** /segment_efforts | List Segment Efforts
 [**GetSegmentEffortById**](SegmentEffortsApi.md#GetSegmentEffortById) | **Get** /segment_efforts/{id} | Get Segment Effort
-
 
 # **GetEffortsBySegmentId**
 > []DetailedSegmentEffort GetEffortsBySegmentId(ctx, segmentId, optional)
@@ -20,11 +19,10 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **segmentId** | **int32**| The identifier of the segment. | 
- **optional** | ***GetEffortsBySegmentIdOpts** | optional parameters | nil if no parameters
+ **optional** | ***SegmentEffortsApiGetEffortsBySegmentIdOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetEffortsBySegmentIdOpts struct
-
+Optional parameters are passed through a pointer to a SegmentEffortsApiGetEffortsBySegmentIdOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
